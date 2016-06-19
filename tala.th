@@ -1,0 +1,31 @@
+encoding  utf-8
+survey tala1 \
+  -title "Водяная пещера 1" \
+  -entrance 1
+ 
+   centerline -author 2013 pawel.krawczyk@hush.com
+     team "Pawel Krawczyk"
+     team "Igor Kommel"
+     date 2013.07.16
+     data normal from to compass clino length
+     cs lat-long
+     fix 1 43:35:26.31 42:54:13.65 1671
+     fix 4 43:35:26.33 42:54:13.36 1673
+     station 1 "Бход 1" entrance
+     station 4 "Бход 2" entrance
+
+       1   22 260     26     3  
+      22    2 230     26     3  
+       2    3 180     15     7.5
+       2    4 305     35     5.4
+       3    5 175      0     2.4
+       5    6 100    -26     7.4
+       
+       flags approximate
+       
+       6    7  50      0     8  
+  
+   endcenterline
+ 
+ endsurvey
+

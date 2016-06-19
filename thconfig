@@ -1,0 +1,39 @@
+encoding  utf-8
+language ru
+
+source main.th
+
+select tala1.main
+select tala2.main
+select tala3.main
+select map1@main
+
+export model -format survex
+export model
+export cave-list -o caves.html -location on
+export continuation-list -o cont.html
+
+layout pdf-plan
+  symbol-set BCRA
+  doc-author pawel.krawczyk@hush.com
+  doc-title "Водяные пещеры под плато Тала"
+  legend on
+  colour-legend on
+  map-header 0 0 nw
+  statistics explo all
+  statistics topo all
+  statistics carto all
+  statistics copyright all
+endlayout
+
+export map -projection plan -layout pdf-plan
+
+layout xvi-export
+  scale 1 200
+  grid-size 1 1 1 m
+endlayout
+
+export map -projection elevation \
+  -layout xvi-export \
+  -fmt xvi \
+  -o cave_ext.xvi

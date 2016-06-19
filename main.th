@@ -1,0 +1,14 @@
+encoding  utf-8
+survey main -title "Водяные пещеры под плато Тала"
+  
+  input tala
+  input tala2
+  input tala3
+  input map
+  
+  map map1
+    scrap1
+  endmap
+  
+endsurvey
+

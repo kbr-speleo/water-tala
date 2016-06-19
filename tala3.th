@@ -1,0 +1,18 @@
+encoding  utf-8
+survey tala3 \
+  -title "Водяная пещера 3" \
+  -entrance 1
+  
+  centerline -author 2013 pawel.krawczyk@hush.com
+  
+    team "Pawel Krawczyk"
+    date 2013.07.21
+    cs lat-long
+    station 1 "Бход 1" entrance continuation explored 5
+    fix 1 43:35:25.51 42:54:15.01 1682
+    mark 1 fixed
+  
+  endcenterline
+  
+endsurvey
+
